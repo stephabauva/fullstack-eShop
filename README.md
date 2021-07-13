@@ -1,2 +1,2 @@
 # fullstack-eShop
-init
+npm init -y -> package.json
