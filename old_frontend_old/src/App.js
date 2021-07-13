@@ -1,8 +1,11 @@
-import './App.css';
+import "./App.css";
+import { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Components
 import Navbar from "../../frontend/src/components/Navbar";
+import SideDrawer from "../../frontend/src/components/SideDrawer";
+import Backdrop from "../../frontend/src/components/Backdrop";
 
 // Pages
 import HomePage from "./pages/HomePage";
@@ -10,9 +13,13 @@ import ProductPage from "./pages/ProductPage";
 import CartPage from "./pages/CartPage";
 
 function App() {
+  const [sideToggle, setSideToggle] = useState(false);
+
   return (
     <Router>
-      <Navbar  />
+      <Navbar click={() => setSideToggle(true)} />
+      <SideDrawer show={sideToggle} click={() => setSideToggle(false)} />
+      <Backdrop show={sideToggle} click={() => setSideToggle(false)} />
       <main className="app">
         <Switch>
           <Route exact path="/" component={HomePage} />
