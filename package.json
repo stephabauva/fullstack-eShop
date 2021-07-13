@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/stephanBV/fullstack-eShop/issues"
   },
-  "homepage": "https://github.com/stephanBV/fullstack-eShop#readme"
+  "homepage": "https://github.com/stephanBV/fullstack-eShop#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.2"
+  }
 }
