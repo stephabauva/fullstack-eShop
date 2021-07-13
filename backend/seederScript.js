@@ -1,5 +1,5 @@
 //Populate the MongoDB database:
-//delete everything that is teh databse currently and 
+//delete everything that is the databse currently and 
 //insert what is in our model: product data
 
 if (process.env.NODE_ENV !== 'production') {

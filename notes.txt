@@ -20,3 +20,6 @@ replacing the password and db name
 
 require('dotenv').config(); --> The dotenv is a zero-dependency module that loads environment variables 
 from a .env file into process.env.
+require() in Node.js --> is used to load and cache JavaScript modules.
+The basic functionality of require is that it reads a JavaScript file, executes the file, 
+and then proceeds to return the exports object
