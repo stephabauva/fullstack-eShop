@@ -1,5 +1,9 @@
-//get env variables config file
-require('dotenv').config();
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config();
+  };
+//The dotenv is a zero-dependency module that loads environment variables 
+//from a .env file into process.env.
+
 //create entrance to server on port
 const express = require('express');
 //create entrance to the db

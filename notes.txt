@@ -17,3 +17,6 @@ to get two separate windows for each.
 
 After creating mongoDB cluster: add cluster connection to MONGO_URI in .env while 
 replacing the password and db name
+
+require('dotenv').config(); --> The dotenv is a zero-dependency module that loads environment variables 
+from a .env file into process.env.
