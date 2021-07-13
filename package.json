@@ -1,0 +1,20 @@
+{
+  "name": "fullstack-eShop",
+  "version": "1.0.0",
+  "description": "init",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephanBV/fullstack-eShop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephanBV/fullstack-eShop/issues"
+  },
+  "homepage": "https://github.com/stephanBV/fullstack-eShop#readme"
+}
