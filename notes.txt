@@ -1,0 +1,16 @@
+added to .gitignore:
+node_modules
+node_modules/
+and .env
+
+in package.json, added:
+ "main": "server.js",
+ and
+ "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemond backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+to always start the server first, provide le path to the server and client 
+and to run at the same time the server and the client for us, so we don't have 
+to get two separate windows for each.
