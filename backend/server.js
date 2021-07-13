@@ -3,7 +3,7 @@ require('dotenv').config();
 //create entrance to server on port
 const express = require('express');
 //create entrance to the db
-const connectDB = require('./config/db');
+const connectDB = require("./config/db");
 
 connectDB();
 

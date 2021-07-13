@@ -14,3 +14,6 @@ in package.json, added:
 to always start the server first, provide le path to the server and client 
 and to run at the same time the server and the client for us, so we don't have 
 to get two separate windows for each.
+
+After creating mongoDB cluster: add cluster connection to MONGO_URI in .env while 
+replacing the password and db name
