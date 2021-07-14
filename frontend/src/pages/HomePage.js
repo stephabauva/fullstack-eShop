@@ -10,6 +10,11 @@ const HomePage = () => {
 
       <div className="homepage__products">
         <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
       </div>
     </div>
   )
