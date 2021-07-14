@@ -1,7 +1,8 @@
 import "./Backdrop.css";
 
-const Backdrop = ({ click, show }) => {
+const Backdrop = ({show, click}) => {
   return show && <div className="backdrop" onClick={click}></div>;
-};
+  
+}
 
 export default Backdrop;
