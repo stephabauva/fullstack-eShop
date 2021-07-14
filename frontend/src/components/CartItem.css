@@ -1,4 +1,4 @@
-.cartitem {
+.cartItem {
   width: 100%;
   padding: 1rem;
   display: grid;
@@ -49,7 +49,7 @@
     padding: 8px 13px;
   }
 
-  .cartitem__price {
+  .cartItem__price {
     font-size: 0.8rem;
   }
 }
@@ -64,7 +64,7 @@
     padding: 5px 8px;
   }
 
-  .cartitem__price {
+  .cartItem__price {
     font-size: 0.6rem;
   }
 }
