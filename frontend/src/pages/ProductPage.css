@@ -1,10 +1,10 @@
-.productpage {
+.productscreen {
   max-width: 1300px;
   margin: 1rem auto;
   display: flex;
 }
 
-.productpage__left {
+.productscreen__left {
   display: flex;
   flex: 0.8;
 }
@@ -38,7 +38,7 @@
   border: none;
 }
 
-.productpage__right {
+.productscreen__right {
   flex: 0.2;
 }
 
@@ -72,11 +72,11 @@
 }
 
 @media (max-width: 960px) {
-  .productpage {
+  .productscreen {
     flex-direction: column;
   }
 
-  .productpage__left {
+  .productscreen__left {
     flex-direction: column;
     flex: 1;
   }
@@ -89,7 +89,7 @@
     flex: 1;
   }
 
-  .productpage__right {
+  .productscreen__right {
     flex: 1;
     padding: 1rem;
   }
