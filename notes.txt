@@ -23,3 +23,5 @@ from a .env file into process.env.
 require() in Node.js --> is used to load and cache JavaScript modules.
 The basic functionality of require is that it reads a JavaScript file, executes the file, 
 and then proceeds to return the exports object
+
+frontend font-awesome from cdnjs.com

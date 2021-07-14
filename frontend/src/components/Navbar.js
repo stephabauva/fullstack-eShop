@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import {link} from "react-router-dom"
+import {Link} from "react-router-dom"
 
 const Navbar = () => {
   return (
@@ -12,13 +12,26 @@ const Navbar = () => {
       {/* links */}
       <ul className="navbar__links">
         <li>
-          <link>
-          
-          </link>
+          <Link to="/cart ">
+            {/* icon */}
+            <i className="fas fa-shopping-cart"></i>
+            cart
+            <span className="cartlogo__badge">0</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/cart">
+          Shop
+          </Link>
         </li>
       </ul>
 
       {/* menu */}
+      <div classsName="hamburger__menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </nav>
   )
 }

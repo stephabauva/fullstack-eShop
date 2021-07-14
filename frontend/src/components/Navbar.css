@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
   width: 100%;
   background-color: #171717;
   display: flex;
@@ -6,9 +6,9 @@
   align-items: center;
   padding: 1.5rem 1rem;
   z-index: 50;
-}
+} */
 
-.navbar__logo h2 {
+/* .navbar__logo h2 {
   color: #f4f4f4;
   font-size: 1.4rem;
   cursor: pointer;
@@ -96,4 +96,4 @@
   .navbar__logo h2 {
     font-size: 1rem;
   }
-}
+} */
