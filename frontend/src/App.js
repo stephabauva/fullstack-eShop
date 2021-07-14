@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Components
 import Navbar from "../../frontend/src/components/Navbar";
-import Backdrop from "../../frontend/src/components/Backdrop"
-import SideDrawer from "../../frontend/src/components/SideDrawer"
+import Backdrop from "../../frontend/src/components/Backdrop";
+import SideDrawer from "../../frontend/src/components/SideDrawer";
 
 // Pages
 import HomePage from "./pages/HomePage";
