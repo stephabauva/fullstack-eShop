@@ -1,11 +1,11 @@
 import * as actionTypes from "../constants/cartConstants";
 
-// const CART_INITIAL_STATE = {
-//   cartItems: [],
-// };
+const CART_INITIAL_STATE = {
+  cartItems: [],
+};
 
-// export const cartReducer = (state = CART_INITIAL_STATE, action) => {
-    export const cartReducer = (state = cartItems, action) => {
+export const cartReducer = (state = CART_INITIAL_STATE, action) => {
+    // export const cartReducer = (state = { cartItems: [] }, action) => {
     //the actions to dispatch:
   switch (action.type) {
     case actionTypes.ADD_TO_CART:
