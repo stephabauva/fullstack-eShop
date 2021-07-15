@@ -33,3 +33,8 @@ composeWithDevTools allows to access the store from the browser developer tool (
 cartActions.js
 axios --> helps make the ajax request, and allows compatibility with several browsers
 getState is part of redux-thunk
+
+homepage:
+after adding the dispatch to the homepage to get all the products when loading the page, we nned to add a proxy to the frontend/package.json.
+then, restart the application for package.json to be reloaded.
+the dispatch will then be redirected to the port 5000

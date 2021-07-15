@@ -4,15 +4,15 @@ import { composeWithDevTools } from "redux-devtools-extension";
 
 //Reducers
 import { cartReducer } from "./reducers/cartReducers";
-// import {
-//   getProductsReducer,
-//   getProductDetailsReducer,
-// } from "./reducers/productReducers";
+import {
+  getProductsReducer,
+  getProductDetailsReducer,
+} from "./reducers/productReducers";
 
 const reducer = combineReducers({
   cart: cartReducer,
-//   getProducts: getProductsReducer,
-//   getProductDetails: getProductDetailsReducer,
+  getProducts: getProductsReducer,
+  getProductDetails: getProductDetailsReducer,
 });
 
 //thunk --> make asynchronous requests in our actions, otherwise not possible in redux
