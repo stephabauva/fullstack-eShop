@@ -48,8 +48,21 @@ useSelector(state => state.getProducts):
 
   https://www.youtube.com/watch?v=0divhP3pEsg&list=WL&index=9&t=72s
 
-  heroku:
-  just to show how putting in production looks like (
-  cd client
-  npm run build
-  --> creates a mini version of our app (./client/build), easier to deploy in production)
+heroku:
+just to show how putting in production looks like (
+cd client
+npm run build
+--> creates a mini version of our app (./client/build), easier to deploy in production)
+
+steps:
+heroku login
+heroku create <name (optional)>
+git remote ( to see what git is connected to)
+add middlewares to server.js,
+in .env, change NODE_ENV to : production
+At root, add a Procfile file and insert -> web: node backend/server.js
+Into ./package.json, add the following script:
+"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+git add .
+git commit -m "final deployment"
+git push heroku HEAD:master
