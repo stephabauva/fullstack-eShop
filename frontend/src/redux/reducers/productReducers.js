@@ -1,7 +1,7 @@
 //handles all the states received from the backend
 import * as actionTypes from "../constants/productConstants";
 
-//fetch (get) all the product swhen we are on the homepage
+//fetch (get) all the products when we are on the homepage
 export const getProductsReducer = (state = { products: [] }, action) => {
   switch (action.type) {
     case actionTypes.GET_PRODUCTS_REQUEST:
