@@ -1,12 +1,12 @@
-import * as actionsTypes from './constants/cartConstants';
-import axios from 'axios' //helps make the ajax request , and allows compatibility with several browsers
+import * as actionTypes from "../constants/cartConstants";
+import axios from "axios"; //helps make the ajax request , and allows compatibility with several browsers
 
 export const addToCart = (id, qty) => async (dispatch, getState) => { //that's why we use thunk: to make asynchronous requests
  //destructure the data out of our axios request
  const { data } = await axios.get(`/api/products/${id}`);
 
  dispatch({
-     type: actionsTypes.ADD_TO_CART,
+    type: actionTypes.ADD_TO_CART,
      //create the paylaod
      payload: {
         product: data._id,

@@ -1,4 +1,3 @@
-//dispatch all of our actions to get from the database
 import * as actionTypes from "../constants/productConstants";
 import axios from "axios";
 

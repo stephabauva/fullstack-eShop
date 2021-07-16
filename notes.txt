@@ -38,7 +38,10 @@ homepage:
 after adding the dispatch to the homepage to get all the products when loading the page, we nned to add a proxy to the frontend/package.json.
 then, restart the application for package.json to be reloaded.
 the dispatch will then be redirected to the port 5000
-useSelector():
-//this useSelector returns the state.getProducts
-//A selector is a function that accepts Redux state as an argument and returns data that is derived from that state
-//useSelector() subscribes to the Redux store, and runs whenever an action is dispatched
+useSelector(state => state.getProducts):
+    //this useSelector takes the state and returns its getProducts data
+  //A selector is a function that accepts Redux state as an argument and returns data that is derived from that state
+  //useSelector() subscribes to the Redux store, and runs whenever an action is dispatched
+
+  productPage:
+  fragment -> at the end of ternary operator to render the product details when loading false and error false
