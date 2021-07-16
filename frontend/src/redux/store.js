@@ -18,19 +18,19 @@ const reducer = combineReducers({
 //thunk --> make asynchronous requests in our actions, otherwise not possible in redux
 const middleware = [thunk];
 
-// const cartItemsInLocalStorage = localStorage.getItem("cart")
-//   ? JSON.parse(localStorage.getItem("cart"))
-//   : [];
+const cartItemsInLocalStorage = localStorage.getItem("cart")
+  ? JSON.parse(localStorage.getItem("cart"))
+  : [];
 
-// const INITIAL_STATE = {
-//   cart: {
-//     cartItems: cartItemsInLocalStorage,
-//   },
-// };
+const INITIAL_STATE = {
+  cart: {
+    cartItems: cartItemsInLocalStorage,
+  },
+};
 
 const store = createStore(
   reducer,
-//   INITIAL_STATE,
+  INITIAL_STATE,
   composeWithDevTools(applyMiddleware(...middleware)) 
   //composeWithDevTools allows to access the store from the browser developer tool (if redux extension installed )
 );

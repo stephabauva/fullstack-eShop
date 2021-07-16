@@ -42,7 +42,11 @@ const CartPage = () => {
           Your cart is empty <Link to="/">Go Back</Link>
         </div>
       ) : cartItems.map(item => (
-        <CartItem item={item} qtyChangeHandler={qtyChangeHandler} removeHandler={removeHandler}/>
+        <CartItem 
+        key={item.product}
+        item={item} 
+        qtyChangeHandler={qtyChangeHandler} 
+        removeHandler={removeHandler}/>
       ))}
     </div>
     <div className="cartpage__right">
