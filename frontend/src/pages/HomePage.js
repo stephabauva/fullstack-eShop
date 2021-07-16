@@ -9,17 +9,17 @@ import Product from "../components/Product";
 import {getProducts as listProducts} from '../redux/actions/productActions'
 
 const HomePage = () => {
-
   const dispatch = useDispatch();
 
-  const getProducts = useSelector(state  => state.getProducts); 
+  const getProducts = useSelector((state)  => state.getProducts); 
   //this useSelector takes the state and returns its getProducts data
   //A selector is a function that accepts Redux state as an argument and returns data that is derived from that state
   //useSelector() subscribes to the Redux store, and runs whenever an action is dispatched
 
   const { products, loading, error } = getProducts  //destructure and get the getProducts array
   console.log('products:', products);
-
+  console.log('loading:', loading);
+  console.log('error:', error);
 
   //everytime the homepage loads we send a dispatch to get the products
   useEffect(() => {
