@@ -22,6 +22,17 @@ const CartPage = () => {
     dispatch(removeFromCart(id));
   }
 
+  const getCartCount = () => {
+    return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0); 
+    //the type of qty in state is string so Number to convert
+    // 0 is our startign quantity
+  }
+
+  const getCartSubTotal = () => {
+    return cartItems.reduce((price, item) => item.price * item.qty + price, 0)
+    //0 is the starting price
+  }
+
   return (
   <div className="cartpage">
     <div className="cartpage__left">
@@ -36,8 +47,8 @@ const CartPage = () => {
     </div>
     <div className="cartpage__right">
       <div className="cartpage_info">
-        <p>Subtotal (0) items</p>
-        <p>$99</p>
+        <p>Subtotal: {getCartCount()} items</p>
+        <p>${getCartSubTotal().toFixed(2)}</p>
       </div>
       <div>
         <button>Proceed To Checkout</button>
