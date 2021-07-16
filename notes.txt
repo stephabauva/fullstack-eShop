@@ -9,7 +9,7 @@ in package.json, added:
  "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
-    "client": "npm start --prefix frontend",
+    "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
 to always start the server first, provide le path to the server and client 
 and to run at the same time the server and the client for us, so we don't have 
@@ -24,7 +24,7 @@ require() in Node.js --> is used to load and cache JavaScript modules.
 The basic functionality of require is that it reads a JavaScript file, executes the file, 
 and then proceeds to return the exports object
 
-frontend font-awesome from cdnjs.com
+client font-awesome from cdnjs.com
 
 store.js:
 thunk --> make asynchronous requests in our actions, otherwise not possible in redux
@@ -35,7 +35,7 @@ axios --> helps make the ajax request, and allows compatibility with several bro
 getState is part of redux-thunk
 
 homepage:
-after adding the dispatch to the homepage to get all the products when loading the page, we nned to add a proxy to the frontend/package.json.
+after adding the dispatch to the homepage to get all the products when loading the page, we nned to add a proxy to the client/package.json.
 then, restart the application for package.json to be reloaded.
 the dispatch will then be redirected to the port 5000
 useSelector(state => state.getProducts):
@@ -45,3 +45,5 @@ useSelector(state => state.getProducts):
 
   productPage:
   fragment -> at the end of ternary operator to render the product details when loading false and error false
+
+  https://www.youtube.com/watch?v=0divhP3pEsg&list=WL&index=9&t=72s

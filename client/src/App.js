@@ -3,9 +3,9 @@ import {useState} from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Components
-import Navbar from "../../frontend/src/components/Navbar";
-import Backdrop from "../../frontend/src/components/Backdrop";
-import SideDrawer from "../../frontend/src/components/SideDrawer";
+import Navbar from "../../client/src/components/Navbar";
+import Backdrop from "../../client/src/components/Backdrop";
+import SideDrawer from "../../client/src/components/SideDrawer";
 
 // Pages
 import HomePage from "./pages/HomePage";
