@@ -19,10 +19,10 @@ const  ProductPage = ({ match, history }) => {
     }
   }, [dispatch, product, match]); //--> dependencies
 
-  return <div className="productscreen">
+  return <div className="productpage">
     {loading ? <h2>Loading...</h2> : error ? <h2>{error}</h2> : (
       <> {/* --> fragment */}
-        <div className="productscreen_left">
+        <div className="productpage_left">
       <img src={product.imageUrl}
       alt={product.name}/>
     </div>
@@ -33,7 +33,7 @@ const  ProductPage = ({ match, history }) => {
         <p>Description: {product.description}</p>
     </div>
 
-    <div className="productscreen__right">
+    <div className="productpage__right">
       <div className="right__info">
         <p>
           Price: <span>${product.price}</span>

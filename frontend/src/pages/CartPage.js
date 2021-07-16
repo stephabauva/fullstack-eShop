@@ -12,7 +12,7 @@ const CartPage = () => {
       <CartItem />
     </div>
     <div className="cartpage__right">
-      <div className="cartscreen_info">
+      <div className="cartpage_info">
         <p>Subtotal (0) items</p>
         <p>$99</p>
       </div>
