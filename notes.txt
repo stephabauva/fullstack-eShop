@@ -60,6 +60,7 @@ heroku create <name (optional)>
 git remote ( to see what git is connected to)
 add middlewares to server.js,
 in .env, change NODE_ENV to : production
+in heroku->dashboard->app name->Settings->Config Vars: add the environment variables from .env file
 At root, add a Procfile file and insert -> web: node backend/server.js
 Into ./package.json, add the following script:
 "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",

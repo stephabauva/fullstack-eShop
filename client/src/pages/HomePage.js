@@ -17,10 +17,7 @@ const HomePage = () => {
   //useSelector() subscribes to the Redux store, and runs whenever an action is dispatched
 
   const { products, loading, error } = getProducts  //destructure and get the getProducts array
-  console.log('products:', products);
-  console.log('loading:', loading);
-  console.log('error:', error);
-
+  
   //everytime the homepage loads we send a dispatch to get the products
   useEffect(() => {
     dispatch(listProducts());

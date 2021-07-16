@@ -1,3 +1,8 @@
+p {
+  text-align: center;
+}
+
+
 .cartpage {
   display: flex;
   max-width: 1300px;
@@ -29,6 +34,7 @@
 
 .cartpage__info p {
   padding: 8px;
+  text-align: center;
 }
 
 .cartpage__info p:first-child {

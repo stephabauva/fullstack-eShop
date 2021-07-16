@@ -15,7 +15,9 @@ const Navbar = ({click}) => {
     <nav className="navbar">
       {/* logo */}
       <div className="navbar__logo">
-        <h2> MERN eShop</h2>
+        <Link to="/" style={{textDecoration:"none"}}>
+          <h2> Click&Get eShop</h2>
+        </Link>
       </div>
 
       {/* links */}
