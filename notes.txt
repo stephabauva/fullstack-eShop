@@ -47,3 +47,9 @@ useSelector(state => state.getProducts):
   fragment -> at the end of ternary operator to render the product details when loading false and error false
 
   https://www.youtube.com/watch?v=0divhP3pEsg&list=WL&index=9&t=72s
+
+  heroku:
+  just to show how putting in production looks like (
+  cd client
+  npm run build
+  --> creates a mini version of our app (./client/build), easier to deploy in production)
