@@ -19,6 +19,11 @@ const  ProductPage = ({ match, history }) => {
     }
   }, [dispatch, product, match]); //--> dependencies
 
+  const addToCartHandler = () => {
+    dispatch(addToCart(product._id, qty));
+    history.push("/cart");
+  }
+
   return <div className="productpage">
     {loading ? <h2>Loading...</h2> : error ? <h2>{error}</h2> : (
       <> {/* --> fragment */}
@@ -51,7 +56,7 @@ const  ProductPage = ({ match, history }) => {
           </select>
         </p>
         <p>
-          <button type="button">Add to cart</button>
+          <button type="button" onClick={addToCartHandler}>Add to cart</button>
         </p>
       </div>
     </div>
