@@ -6,11 +6,7 @@ This project showcases a reactive online commerce with: <br>
 - React, Redux for the frontend
 - Heroku for deployment
 
-### Future updates
-
-🔑 Authentication: register, login, forgot password, reset password, with email <br>
-💰 Stripe payment <br>
-🤖 AI recommendation
+Check out the website on Heroku [<img align="center" alt="heroku" src="https://raw.githubusercontent.com/heroku/favicon/master/favicon.iconset/icon_32x32.png">][heroku]
 
 ### Languages and Tools
 
@@ -27,10 +23,20 @@ This project showcases a reactive online commerce with: <br>
 
 <br />
 
+### Future updates
+
+🔑 Authentication: register, login, forgot password, reset password, with email <br>
+💰 Stripe payment <br>
+🤖 AI recommendation <br >
+⚡️ Integration of Next.js
+
 ---
 
 ### Connect with me:
 
-[<img align="left" alt="LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
+[<img align="left" alt="LinkedIn" width="22px" src="https://camo.githubusercontent.com/c8a9c5b414cd812ad6a97a46c29af67239ddaeae08c41724ff7d945fb4c047e5/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f6c696e6b6564696e2e737667" />][linkedin]
+[<img align="left" alt="discord" width="22px" src="https://camo.githubusercontent.com/79fcdc7c43f1a1d7c175827976ffee8177814a016fb1b9578ff70f1aef759578/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f646973636f72642e737667" />][discord]
 
+[heroku]: https://peaceful-anchorage-33719.herokuapp.com/
 [linkedin]: https://www.linkedin.com/in/stephan-baudry/
+[discord]: https://discordapp.com/users/567363754988404762
